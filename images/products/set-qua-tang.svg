@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <radialGradient id="cardBg3" cx="50%" cy="45%" r="65%">
+      <stop offset="0%" stop-color="#3D0914" />
+      <stop offset="60%" stop-color="#21040A" />
+      <stop offset="100%" stop-color="#0E0104" />
+    </radialGradient>
+    <linearGradient id="goldG" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF5D6" />
+      <stop offset="35%" stop-color="#D4AF37" />
+      <stop offset="70%" stop-color="#AA7C11" />
+      <stop offset="100%" stop-color="#E5C158" />
+    </linearGradient>
+    <linearGradient id="burgundyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#9E1B32" />
+      <stop offset="50%" stop-color="#7B1123" />
+      <stop offset="100%" stop-color="#4C0A15" />
+    </linearGradient>
+    <filter id="softShadow3" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="12" result="blur" />
+      <feColorMatrix type="matrix" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.6 0"/>
+    </filter>
+  </defs>
+
+  <rect width="500" height="500" rx="12" fill="url(#cardBg3)" />
+  <circle cx="250" cy="240" r="150" fill="#D4AF37" opacity="0.1" filter="url(#softShadow3)" />
+  
+  <!-- Base Shadow -->
+  <ellipse cx="250" cy="425" rx="160" ry="24" fill="#000000" opacity="0.75" filter="url(#softShadow3)" />
+
+  <!-- ============================================== -->
+  <!-- LUXURY GIFT SET COMBO: BOX + RED BAG WITH GOLD CORDS -->
+  <!-- ============================================== -->
+  <g transform="translate(100, 100)">
+    <!-- Rear Gift Bag (Red Burgundy with Gold Rope) -->
+    <g transform="translate(160, 40) scale(0.72)">
+      <!-- Bag Body -->
+      <path d="M 25,60 L 215,60 L 235,320 L 5,320 Z" fill="url(#burgundyGrad)" stroke="#590C19" stroke-width="1.5" />
+      <path d="M 215,60 L 255,40 L 275,300 L 235,320 Z" fill="#5E0B1A" stroke="#480713" stroke-width="1" />
+      <path d="M 24,60 L 216,60 L 256,40" stroke="url(#goldG)" stroke-width="2.5" fill="none" />
+      
+      <!-- Gold Cord Handles -->
+      <path d="M 90,60 C 90,-20 150,-20 150,60" fill="none" stroke="url(#goldG)" stroke-width="7" stroke-linecap="round" />
+      <circle cx="85" cy="80" r="6" fill="url(#goldG)" />
+      <circle cx="155" cy="80" r="6" fill="url(#goldG)" />
+      <path d="M 85,80 C 85,25 155,25 155,80" fill="none" stroke="url(#goldG)" stroke-width="7" stroke-linecap="round" />
+
+      <!-- Center Logo Seal on Bag -->
+      <circle cx="120" cy="190" r="46" fill="#1C0307" stroke="url(#goldG)" stroke-width="2" />
+      <text x="120" y="196" fill="url(#goldG)" font-family="'Playfair Display', serif" font-size="9" font-weight="700" letter-spacing="1.5" text-anchor="middle">
+        BIRD'S NEST
+      </text>
+    </g>
+
+    <!-- Front Luxury Rigid Gift Box Opened Display -->
+    <g transform="translate(10, 140)">
+      <!-- Box Shadow -->
+      <rect x="0" y="30" width="220" height="150" rx="8" fill="#0A0103" opacity="0.6" filter="url(#softShadow3)" />
+      <!-- Box Container in Rich Burgundy -->
+      <rect x="0" y="0" width="220" height="150" rx="8" fill="url(#burgundyGrad)" stroke="#450712" stroke-width="2" />
+      <!-- Gold Rim Lining -->
+      <rect x="4" y="4" width="212" height="142" rx="6" fill="none" stroke="url(#goldG)" stroke-width="1.2" />
+      
+      <!-- Inner Satin Fabric Liner with Cutouts -->
+      <rect x="10" y="10" width="200" height="130" rx="4" fill="#3D0610" />
+
+      <!-- 3 Steamed Nest Jars in the Box -->
+      <!-- Jar 1 -->
+      <g transform="translate(25, 25)">
+        <rect x="0" y="20" width="45" height="60" rx="8" fill="#FFFFFF" fill-opacity="0.15" stroke="#FFFFFF" stroke-width="0.8" />
+        <rect x="4" y="32" width="37" height="42" rx="4" fill="#E6CE9F" fill-opacity="0.75" />
+        <rect x="2" y="10" width="41" height="12" rx="3" fill="url(#goldG)" />
+        <ellipse cx="22" cy="50" rx="4" ry="2" fill="#8B1122" />
+      </g>
+      <!-- Jar 2 (Center) -->
+      <g transform="translate(85, 25)">
+        <rect x="0" y="20" width="45" height="60" rx="8" fill="#FFFFFF" fill-opacity="0.15" stroke="#FFFFFF" stroke-width="0.8" />
+        <rect x="4" y="32" width="37" height="42" rx="4" fill="#E6CE9F" fill-opacity="0.75" />
+        <rect x="2" y="10" width="41" height="12" rx="3" fill="url(#goldG)" />
+        <ellipse cx="22" cy="50" rx="4" ry="2" fill="#8B1122" />
+      </g>
+      <!-- Jar 3 -->
+      <g transform="translate(145, 25)">
+        <rect x="0" y="20" width="45" height="60" rx="8" fill="#FFFFFF" fill-opacity="0.15" stroke="#FFFFFF" stroke-width="0.8" />
+        <rect x="4" y="32" width="37" height="42" rx="4" fill="#E6CE9F" fill-opacity="0.75" />
+        <rect x="2" y="10" width="41" height="12" rx="3" fill="url(#goldG)" />
+        <circle cx="22" cy="50" r="3" fill="#D4AF37" />
+      </g>
+
+      <!-- Center Gold Badge on Box Front -->
+      <rect x="60" y="105" width="100" height="22" rx="11" fill="#1C0307" stroke="url(#goldG)" stroke-width="1" />
+      <text x="110" y="119" fill="url(#goldG)" font-family="'Playfair Display', serif" font-size="8.5" font-weight="700" letter-spacing="1.2" text-anchor="middle">
+        BIRD'S NEST
+      </text>
+    </g>
+
+    <!-- Golden Ribbon & Gift Bow Ornament in Foreground -->
+    <g transform="translate(205, 270)">
+      <circle cx="0" cy="0" r="16" fill="#1A0206" stroke="url(#goldG)" stroke-width="1.5" />
+      <polygon points="0,-12 3,-4 11,-4 5,2 7,10 0,5 -7,10 -5,2 -11,-4 -3,-4" fill="url(#goldG)" />
+    </g>
+  </g>
+
+  <!-- Top Badge: Bộ Quà Biếu -->
+  <g transform="translate(30, 30)">
+    <rect x="0" y="0" width="135" height="28" rx="14" fill="#1B0307" stroke="url(#goldG)" stroke-width="1" />
+    <text x="67" y="18" fill="url(#goldG)" font-family="'Montserrat', sans-serif" font-size="8.5" font-weight="600" letter-spacing="0.5" text-anchor="middle">
+      SET QUÀ TẶNG YẾN
+    </text>
+  </g>
+
+  <!-- Bottom Placeholder Pill Badge -->
+  <g transform="translate(130, 455)">
+    <rect x="0" y="0" width="240" height="26" rx="13" fill="#120104" fill-opacity="0.9" stroke="url(#goldG)" stroke-width="0.8" />
+    <text x="120" y="17" fill="#ECC875" font-family="'Montserrat', sans-serif" font-size="8" font-weight="500" letter-spacing="0.5" text-anchor="middle">
+      [UPLOAD PRODUCT IMAGE / ẢNH SẢN PHẨM]
+    </text>
+  </g>
+</svg>

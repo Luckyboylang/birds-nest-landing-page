@@ -1,0 +1,298 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 680" width="100%" height="100%">
+  <defs>
+    <!-- Background Radial Lighting -->
+    <radialGradient id="heroAtmosphere" cx="50%" cy="38%" r="68%">
+      <stop offset="0%" stop-color="#4C0A17" />
+      <stop offset="38%" stop-color="#28040B" />
+      <stop offset="75%" stop-color="#140105" />
+      <stop offset="100%" stop-color="#0A0002" />
+    </radialGradient>
+
+    <!-- Liquid Gold Gradients -->
+    <linearGradient id="goldLuxury" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF8DC" />
+      <stop offset="20%" stop-color="#F3DC90" />
+      <stop offset="45%" stop-color="#D4AF37" />
+      <stop offset="70%" stop-color="#996E0E" />
+      <stop offset="90%" stop-color="#F2D785" />
+      <stop offset="100%" stop-color="#805603" />
+    </linearGradient>
+
+    <linearGradient id="goldHShimmer" x1="0%" y1="50%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#C69E2B" />
+      <stop offset="35%" stop-color="#FCEAB3" />
+      <stop offset="50%" stop-color="#FFFFFF" />
+      <stop offset="65%" stop-color="#FCEAB3" />
+      <stop offset="100%" stop-color="#B8860B" />
+    </linearGradient>
+
+    <!-- Signature Burgundy Bag Shading -->
+    <linearGradient id="bagVelvet" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#A81D37" />
+      <stop offset="30%" stop-color="#801228" />
+      <stop offset="75%" stop-color="#550A19" />
+      <stop offset="100%" stop-color="#36040E" />
+    </linearGradient>
+
+    <!-- Braided Gold Rope Handle -->
+    <linearGradient id="goldBraidedCord" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFF2CA" />
+      <stop offset="25%" stop-color="#D4AF37" />
+      <stop offset="50%" stop-color="#8A6305" />
+      <stop offset="75%" stop-color="#E5C467" />
+      <stop offset="100%" stop-color="#6E4C02" />
+    </linearGradient>
+
+    <!-- Porcelain Bowl Gradients -->
+    <radialGradient id="porcelainGlaze" cx="40%" cy="30%" r="65%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="45%" stop-color="#FAF7F2" />
+      <stop offset="85%" stop-color="#E5DDD2" />
+      <stop offset="100%" stop-color="#C9BDB0" />
+    </radialGradient>
+
+    <!-- Steamed Edible Nest Gelatinous Golden Soup -->
+    <radialGradient id="goldenSoup" cx="50%" cy="45%" r="55%">
+      <stop offset="0%" stop-color="#FFFDF7" />
+      <stop offset="35%" stop-color="#F8EFD8" />
+      <stop offset="70%" stop-color="#ECD49E" />
+      <stop offset="100%" stop-color="#D6B46A" />
+    </radialGradient>
+
+    <!-- Filter Shadows -->
+    <filter id="cinematicDrop" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="16" result="blur" />
+      <feColorMatrix type="matrix" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.7 0"/>
+    </filter>
+    <filter id="goldAuraSoft" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background Base Canvas -->
+  <rect width="900" height="680" rx="20" fill="url(#heroAtmosphere)" />
+
+  <!-- Luminous Ambient Light Rings -->
+  <circle cx="280" cy="180" r="220" fill="#D4AF37" opacity="0.12" filter="url(#cinematicDrop)" />
+  <circle cx="680" cy="380" r="240" fill="#A81D37" opacity="0.16" filter="url(#cinematicDrop)" />
+
+  <!-- Soft Golden Dust Specks -->
+  <g opacity="0.6">
+    <circle cx="220" cy="130" r="2.5" fill="#FFEBA3" />
+    <circle cx="340" cy="90" r="3" fill="#FFEBA3" />
+    <circle cx="510" cy="140" r="2" fill="#FFEBA3" />
+    <circle cx="670" cy="110" r="3.5" fill="#FFEBA3" />
+    <circle cx="780" cy="200" r="2" fill="#FFEBA3" />
+    <circle cx="440" cy="240" r="1.8" fill="#FFEBA3" />
+    <circle cx="160" cy="310" r="2.2" fill="#FFEBA3" />
+  </g>
+
+  <!-- Ground Silk Drape & Heavy Cast Shadows -->
+  <ellipse cx="450" cy="590" rx="410" ry="48" fill="#040001" opacity="0.85" filter="url(#cinematicDrop)" />
+  <path d="M 40,600 Q 250,575 450,580 Q 670,575 860,605 L 870,665 L 30,665 Z" fill="#1C0307" />
+  <path d="M 100,605 Q 300,588 470,593 Q 660,588 810,612" stroke="url(#goldLuxury)" stroke-width="1.2" opacity="0.35" fill="none" />
+
+  <!-- =========================================================================
+       1. THE SIGNATURE BURGUNDY GIFT BAG (Left/Back)
+       Matching Packaging Reference: Red/Burgundy, Gold cord, Circular Dark Seal
+       ========================================================================= -->
+  <g transform="translate(130, 160)">
+    <!-- Bag Shadow -->
+    <path d="M 25,370 L 255,370 L 290,325 L 60,325 Z" fill="#050001" opacity="0.6" filter="url(#cinematicDrop)" />
+    
+    <!-- Bag Front Face -->
+    <path d="M 30,70 L 245,70 L 265,365 L 10,365 Z" fill="url(#bagVelvet)" stroke="#4A0713" stroke-width="2" />
+    
+    <!-- Bag Right Fold Side (Depth) -->
+    <path d="M 245,70 L 292,48 L 312,345 L 265,365 Z" fill="#4A0713" stroke="#33040C" stroke-width="1" />
+    <path d="M 292,48 L 292,53 L 245,75 L 245,70 Z" fill="#6B0C1C" />
+
+    <!-- Top Rim Gold Foil Border -->
+    <path d="M 29,70 L 246,70 L 293,48" stroke="url(#goldHShimmer)" stroke-width="3" fill="none" />
+
+    <!-- Braided Gold Rope Handles (Quai dây màu vàng sang trọng) -->
+    <!-- Rear Rope Loop -->
+    <path d="M 98,70 C 98, -25 172, -25 172,70" fill="none" stroke="url(#goldBraidedCord)" stroke-width="8" stroke-linecap="round" />
+    <path d="M 98,70 C 98, -25 172, -25 172,70" fill="none" stroke="#684803" stroke-width="1.5" stroke-dasharray="4 4" />
+    
+    <!-- Front Grommets in Gold -->
+    <circle cx="92" cy="94" r="6.5" fill="url(#goldLuxury)" stroke="#4A0713" stroke-width="1.5" />
+    <circle cx="178" cy="94" r="6.5" fill="url(#goldLuxury)" stroke="#4A0713" stroke-width="1.5" />
+
+    <!-- Front Rope Loop Cascading Naturally -->
+    <path d="M 92,94 C 92, 32 178, 32 178,94" fill="none" stroke="url(#goldBraidedCord)" stroke-width="8" stroke-linecap="round" />
+    <path d="M 92,94 C 92, 32 178, 32 178,94" fill="none" stroke="#5E4002" stroke-width="1.5" stroke-dasharray="4 4" />
+
+    <!-- Signature Dark Circular Medallion on Bag -->
+    <g transform="translate(138, 220)">
+      <circle cx="0" cy="0" r="54" fill="#140104" stroke="url(#goldLuxury)" stroke-width="2.5" />
+      <circle cx="0" cy="0" r="48" fill="none" stroke="url(#goldLuxury)" stroke-width="1" stroke-dasharray="3 4" opacity="0.8" />
+      <circle cx="0" cy="0" r="44" fill="none" stroke="url(#goldLuxury)" stroke-width="0.5" opacity="0.5" />
+
+      <!-- Golden Swallow Emblem -->
+      <path d="M -24,8 C -14,22 14,22 24,8 C 16,14 -16,14 -24,8 Z" fill="url(#goldLuxury)" filter="url(#goldAuraSoft)" />
+      <path d="M 0,-5 C -6,-15 -18,-24 -28,-22 C -22,-17 -14,-11 -7,-5 C -12,-3 -19,-1 -24,0 C -17,2 -9,1 -2,1 Z" fill="url(#goldLuxury)" />
+      <path d="M 0,-5 C 7,-17 20,-28 32,-26 C 26,-20 16,-13 8,-6 C 14,-5 22,-3 27,0 C 20,2 11,2 2,1 Z" fill="url(#goldLuxury)" />
+      
+      <!-- Brand Typography in Gold on Bag -->
+      <text x="0" y="27" fill="url(#goldLuxury)" font-family="'Playfair Display', serif" font-size="9" font-weight="700" letter-spacing="2" text-anchor="middle">
+        BIRD'S NEST
+      </text>
+      <text x="0" y="38" fill="#EBD299" font-family="'Montserrat', sans-serif" font-size="5.5" font-weight="600" letter-spacing="1.5" text-anchor="middle">
+        YẾN SÀO CAO CẤP
+      </text>
+    </g>
+
+    <!-- Gold Corner Filigree on Bag -->
+    <path d="M 42,105 L 42,130 M 42,105 L 67,105" stroke="url(#goldLuxury)" stroke-width="1" opacity="0.6" fill="none" />
+    <path d="M 235,105 L 235,130 M 235,105 L 210,105" stroke="url(#goldLuxury)" stroke-width="1" opacity="0.6" fill="none" />
+    <path d="M 42,335 L 42,310 M 42,335 L 67,335" stroke="url(#goldLuxury)" stroke-width="1" opacity="0.6" fill="none" />
+    <path d="M 235,335 L 235,310 M 235,335 L 210,335" stroke="url(#goldLuxury)" stroke-width="1" opacity="0.6" fill="none" />
+  </g>
+
+  <!-- =========================================================================
+       2. LUXURY RIGID GIFT CHEST (Right Center)
+       Heavy rigid box, gold foil banding, satin ribbon bow
+       ========================================================================= -->
+  <g transform="translate(430, 240)">
+    <!-- Box Shadow -->
+    <path d="M 25,320 L 330,320 L 400,270 L 95,270 Z" fill="#040001" opacity="0.75" filter="url(#cinematicDrop)" />
+
+    <!-- Box Top Face -->
+    <path d="M 35,140 L 300,140 L 380,80 L 115,80 Z" fill="#4A0713" stroke="#2B0309" stroke-width="1.5" />
+    
+    <!-- Box Front Face -->
+    <path d="M 35,140 L 300,140 L 300,300 L 35,300 Z" fill="url(#bagVelvet)" stroke="#2B0309" stroke-width="2" />
+    
+    <!-- Box Right Face -->
+    <path d="M 300,140 L 380,80 L 380,240 L 300,300 Z" fill="#3D050E" stroke="#2B0309" stroke-width="1.5" />
+
+    <!-- Gold Foil Edge Framing on Box Front -->
+    <path d="M 42,148 L 292,148 L 292,292 L 42,292 Z" stroke="url(#goldHShimmer)" stroke-width="2" fill="none" />
+    <path d="M 50,156 L 284,156 L 284,284 L 50,284 Z" stroke="url(#goldLuxury)" stroke-width="0.8" fill="none" stroke-dasharray="4 3" opacity="0.7" />
+
+    <!-- Gold Foil Ribbon Bands across Box -->
+    <!-- Vertical Ribbon -->
+    <path d="M 148,140 L 174,140 L 174,300 L 148,300 Z" fill="url(#goldLuxury)" />
+    <path d="M 174,140 L 200,140 L 280,80 L 254,80 Z" fill="url(#goldLuxury)" opacity="0.8" />
+    <!-- Horizontal Ribbon -->
+    <path d="M 35,205 L 300,205 L 300,231 L 35,231 Z" fill="url(#goldLuxury)" />
+    <path d="M 300,205 L 380,145 L 380,171 L 300,231 Z" fill="url(#goldLuxury)" opacity="0.75" />
+
+    <!-- Center Gold Bow Medallion -->
+    <g transform="translate(161, 218)">
+      <circle cx="0" cy="0" r="26" fill="#1C0307" stroke="url(#goldHShimmer)" stroke-width="2.5" />
+      <polygon points="0,-18 5,-6 18,-6 7,3 12,15 0,7 -12,15 -7,3 -18,-6 -5,-6" fill="url(#goldLuxury)" />
+    </g>
+
+    <!-- Luxury Plaque Plate on Box -->
+    <rect x="85" y="248" width="150" height="32" rx="4" fill="#120104" stroke="url(#goldLuxury)" stroke-width="1.2" />
+    <text x="160" y="269" fill="url(#goldLuxury)" font-family="'Playfair Display', serif" font-size="12" font-weight="700" letter-spacing="2.5" text-anchor="middle">
+      BIRD'S NEST
+    </text>
+  </g>
+
+  <!-- =========================================================================
+       3. WHITE PORCELAIN BOWL WITH STEAMED EDIBLE NEST (Front Center)
+       Porcelain shine, golden broth, delicate strands, jujube & lotus seeds
+       ========================================================================= -->
+  <g transform="translate(320, 390)">
+    <!-- Bowl Heavy Shadow -->
+    <ellipse cx="140" cy="210" rx="130" ry="32" fill="#040001" opacity="0.8" filter="url(#cinematicDrop)" />
+
+    <!-- Foot of Bowl -->
+    <ellipse cx="140" cy="200" rx="60" ry="16" fill="#B5A99C" />
+    
+    <!-- Bowl Outer Shape -->
+    <path d="M 15,115 C 15,200 265,200 265,115 Z" fill="url(#porcelainGlaze)" stroke="#FFFFFF" stroke-width="2" />
+    
+    <!-- Golden Rim on Porcelain -->
+    <ellipse cx="140" cy="115" rx="125" ry="34" fill="#FCFAF6" stroke="url(#goldHShimmer)" stroke-width="3" />
+    <ellipse cx="140" cy="115" rx="116" ry="29" fill="#E8DFD3" />
+
+    <!-- Steamed Bird Nest Golden Broth Surface -->
+    <ellipse cx="140" cy="115" rx="110" ry="26" fill="url(#goldenSoup)" />
+
+    <!-- Delicate Yến Sợi Texture (Sợi yến chưng sánh mịn) -->
+    <g stroke="#C2A25B" stroke-width="1.6" fill="none" opacity="0.85">
+      <path d="M 70,115 Q 105,104 140,115 Q 175,126 210,115" />
+      <path d="M 85,108 Q 120,120 155,110 Q 190,102 205,112" />
+      <path d="M 60,117 Q 95,128 130,117 Q 170,106 195,118" />
+      <path d="M 100,124 Q 135,114 170,123" />
+      <path d="M 115,106 Q 140,112 175,107" />
+    </g>
+
+    <!-- Translucent Rock Sugar Crystals & Red Dates / Jujube Accents -->
+    <g filter="url(#goldAuraSoft)">
+      <!-- Rock sugar translucent cubes -->
+      <polygon points="122,109 130,104 135,112 127,117" fill="#FFFFFF" opacity="0.95" />
+      <polygon points="152,114 160,109 165,115 157,121" fill="#FFFCE8" opacity="0.9" />
+      <polygon points="135,119 143,115 146,122 138,125" fill="#FFFFFF" opacity="0.95" />
+
+      <!-- Red Jujube (Táo đỏ bổ dưỡng) -->
+      <ellipse cx="106" cy="112" rx="9" ry="5.5" fill="#880E1C" stroke="#B81A2D" stroke-width="1" transform="rotate(-15, 106, 112)" />
+      <ellipse cx="176" cy="113" rx="8.5" ry="5" fill="#A01525" stroke="#D42036" stroke-width="1" transform="rotate(20, 176, 113)" />
+
+      <!-- Golden Lotus Seed (Hạt sen thanh mát) -->
+      <circle cx="140" cy="107" r="6.5" fill="#F8E5BA" stroke="#D4AF37" stroke-width="1" />
+    </g>
+
+    <!-- Rising Steam Swirls (Hơi khói thanh mát tỏa nhẹ) -->
+    <g stroke="#FFFFFF" stroke-width="2.2" fill="none" opacity="0.35" filter="url(#cinematicDrop)">
+      <path d="M 120,95 C 112,55 138,40 125,10" />
+      <path d="M 148,88 C 160,50 134,35 152,5" />
+      <path d="M 168,95 C 174,65 156,45 174,20" />
+    </g>
+
+    <!-- Golden Imperial Tasting Spoon Beside Bowl -->
+    <g transform="translate(235, 140) rotate(35)">
+      <ellipse cx="32" cy="0" rx="26" ry="14" fill="url(#goldHShimmer)" stroke="#7C5908" stroke-width="1.2" />
+      <path d="M 6,0 L -90,0" stroke="url(#goldLuxury)" stroke-width="5.5" stroke-linecap="round" />
+      <circle cx="-88" cy="0" r="5.5" fill="url(#goldLuxury)" />
+    </g>
+  </g>
+
+  <!-- =========================================================================
+       4. RAW WHOLE EDIBLE BIRD'S NEST CUP (Front Left)
+       Tai yến nguyên bản trắng ngà thượng hạng trên đế gỗ
+       ========================================================================= -->
+  <g transform="translate(80, 440)">
+    <!-- Wooden Stand Shadow -->
+    <ellipse cx="105" cy="150" rx="90" ry="24" fill="#040001" opacity="0.75" filter="url(#cinematicDrop)" />
+    <ellipse cx="105" cy="140" rx="80" ry="18" fill="#2E1711" stroke="url(#goldLuxury)" stroke-width="1.5" />
+
+    <!-- Nest Cup Body -->
+    <g filter="url(#cinematicDrop)">
+      <path d="M 40,110 C 40,165 170,165 170,110 C 150,130 60,130 40,110 Z" fill="#FDFBF7" stroke="#E2D7C7" stroke-width="1.5" />
+      
+      <!-- Intricate Strands of Whole Nest -->
+      <g stroke="#D5C5AE" stroke-width="1.5" fill="none">
+        <path d="M 48,116 C 68,144 142,144 162,116" />
+        <path d="M 54,122 C 74,148 136,148 156,122" />
+        <path d="M 62,128 C 82,152 128,152 148,128" />
+        <path d="M 72,134 C 88,154 122,154 138,134" />
+        <path d="M 58,114 L 68,135 M 82,118 L 88,142 M 105,120 L 105,145 M 125,118 L 120,142 M 148,114 L 140,135" opacity="0.65" />
+      </g>
+    </g>
+
+    <!-- Plaque: Tổ Yến Tinh Chế Thượng Hạng -->
+    <rect x="52" y="158" width="106" height="22" rx="11" fill="#140104" stroke="url(#goldLuxury)" stroke-width="1" />
+    <text x="105" y="173" fill="url(#goldLuxury)" font-family="'Montserrat', sans-serif" font-size="8" font-weight="700" letter-spacing="1" text-anchor="middle">
+      TỔ YẾN NGUYÊN BẢN
+    </text>
+  </g>
+
+  <!-- Top Floating Badge: Quà Tặng Thượng Lưu -->
+  <g transform="translate(680, 50)">
+    <rect x="0" y="0" width="180" height="48" rx="24" fill="#120104" fill-opacity="0.9" stroke="url(#goldHShimmer)" stroke-width="1.5" filter="url(#cinematicDrop)" />
+    <circle cx="28" cy="24" r="14" fill="url(#goldLuxury)" />
+    <polygon points="28,14 31,21 39,21 33,26 35,33 28,29 21,33 23,26 17,21 25,21" fill="#1C0307" />
+    <text x="52" y="22" fill="url(#goldHShimmer)" font-family="'Playfair Display', serif" font-size="11" font-weight="700">
+      HOÀNG GIA ĐẲNG CẤP
+    </text>
+    <text x="52" y="36" fill="#E8D19F" font-family="'Montserrat', sans-serif" font-size="8.5" font-weight="600">
+      Tinh tuyển từng sợi yến
+    </text>
+  </g>
+</svg>
