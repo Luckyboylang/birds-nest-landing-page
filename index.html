@@ -779,20 +779,25 @@
             <h3 class="form-title">ĐẶT HÀNG / TƯ VẤN NHANH</h3>
             <p class="form-subtitle">Điền thông tin bên dưới, chuyên viên BIRD'S NEST sẽ liên hệ hỗ trợ trong thời gian sớm nhất.</p>
 
-            <form id="quickOrderForm">
+            <form id="quickOrderForm" name="birdnest-orders" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+              <input type="hidden" name="form-name" value="birdnest-orders">
+              <p style="display: none;">
+                <label>Vui lòng không điền trường này: <input name="bot-field"></label>
+              </p>
+
               <div class="form-row">
                 <div class="form-group">
                   <label for="orderName" class="form-label">
                     Họ và tên <span class="form-label-required">*</span>
                   </label>
-                  <input type="text" id="orderName" class="form-input" placeholder="Ví dụ: Nguyễn Văn A" required>
+                  <input type="text" id="orderName" name="name" class="form-input" placeholder="Ví dụ: Nguyễn Văn A" required>
                 </div>
 
                 <div class="form-group">
                   <label for="orderPhone" class="form-label">
                     Số điện thoại <span class="form-label-required">*</span>
                   </label>
-                  <input type="tel" id="orderPhone" class="form-input" placeholder="Ví dụ: 0912 345 678" required>
+                  <input type="tel" id="orderPhone" name="phone" class="form-input" placeholder="Ví dụ: 0912 345 678" required>
                 </div>
               </div>
 
@@ -800,7 +805,7 @@
                 <label for="orderProductSelect" class="form-label">
                   Sản phẩm quan tâm
                 </label>
-                <select id="orderProductSelect" class="form-select">
+                <select id="orderProductSelect" name="product" class="form-select">
                   <!-- Populated from data.products -->
                 </select>
               </div>
@@ -809,19 +814,19 @@
                 <label for="orderQuantity" class="form-label">
                   Số lượng / Quy cách mong muốn
                 </label>
-                <input type="text" id="orderQuantity" class="form-input" placeholder="Ví dụ: 2 hộp quà / Hộp 10 hũ thượng uyển">
+                <input type="text" id="orderQuantity" name="quantity" class="form-input" placeholder="Ví dụ: 2 hộp quà / Hộp 10 hũ thượng uyển">
               </div>
 
               <div class="form-group">
                 <label for="orderNote" class="form-label">
                   Ghi chú hoặc yêu cầu quà tặng
                 </label>
-                <textarea id="orderNote" class="form-textarea" placeholder="Ví dụ: Cần đóng gói quà biếu đối tác, giao giờ hành chính..."></textarea>
+                <textarea id="orderNote" name="note" class="form-textarea" placeholder="Ví dụ: Cần đóng gói quà biếu đối tác, giao giờ hành chính..."></textarea>
               </div>
 
-              <button type="submit" class="btn btn-primary" style="width: 100%;">
+              <button type="submit" class="btn btn-primary" id="orderSubmitBtn" style="width: 100%;">
                 <svg class="btn-icon" viewBox="0 0 24 24"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
-                GỬI YÊU CẦU ĐẶT HÀNG NGAY
+                <span id="orderSubmitText">GỬI YÊU CẦU ĐẶT HÀNG NGAY</span>
               </button>
 
               <div style="display: flex; align-items: center; gap: 12px; margin: 14px 0;">

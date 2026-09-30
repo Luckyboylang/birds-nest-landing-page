@@ -379,28 +379,82 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // =========================================================================
-  // 7. ORDER FORM PROCESSING & TOAST
+  // 7. ORDER FORM PROCESSING (NETLIFY EMAIL + GOOGLE SHEETS) & TOAST
   // =========================================================================
   const orderForm = document.getElementById('quickOrderForm');
   const toastNotice = document.getElementById('toastNotice');
+  const submitBtn = document.getElementById('orderSubmitBtn');
+  const submitText = document.getElementById('orderSubmitText');
 
   if (orderForm) {
-    orderForm.addEventListener('submit', (e) => {
+    orderForm.addEventListener('submit', async (e) => {
       e.preventDefault();
       const name = document.getElementById('orderName').value.trim();
       const phone = document.getElementById('orderPhone').value.trim();
       const product = document.getElementById('orderProductSelect').value;
+      const quantity = document.getElementById('orderQuantity').value.trim();
+      const note = document.getElementById('orderNote').value.trim();
 
       if (!name || !phone) {
         showToast('Vui lòng điền thông tin', 'Họ tên và số điện thoại là bắt buộc để BIRD\'S NEST liên hệ.');
         return;
       }
 
-      showToast(
-        'Tiếp nhận yêu cầu thành công!',
-        `Cảm ơn quý khách ${name}. Chuyên viên BIRD'S NEST sẽ liên hệ qua SĐT ${phone} để gửi báo giá và xác nhận đơn hàng ngay.`
-      );
-      orderForm.reset();
+      // Visual loading state
+      if (submitBtn) submitBtn.disabled = true;
+      if (submitText) submitText.textContent = 'ĐANG GỬI THÔNG TIN...';
+
+      const timestamp = new Date().toLocaleString('vi-VN', { timeZone: 'Asia/Ho_Chi_Minh' });
+      const orderPayload = {
+        timestamp,
+        name,
+        phone,
+        product: product || 'Tư vấn tổng hợp',
+        quantity: quantity || '1',
+        note: note || 'Không có ghi chú'
+      };
+
+      // 1. Post to Netlify Forms (triggers automated email to shop owner)
+      try {
+        const formData = new FormData(orderForm);
+        fetch('/', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+          body: new URLSearchParams(formData).toString()
+        }).catch(err => console.log('Netlify form notice:', err));
+      } catch (err) {
+        console.log('Netlify dispatch notice:', err);
+      }
+
+      // 2. Post to Google Sheets Webhook (if configured in data.orderConfig)
+      if (data.orderConfig && data.orderConfig.googleSheetWebhookUrl) {
+        const sheetUrl = data.orderConfig.googleSheetWebhookUrl.trim();
+        if (sheetUrl && sheetUrl.startsWith('http')) {
+          try {
+            fetch(sheetUrl, {
+              method: 'POST',
+              mode: 'no-cors',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify(orderPayload)
+            }).catch(err => console.log('Google Sheets sync notice:', err));
+          } catch (err) {
+            console.log('Google Sheets dispatch notice:', err);
+          }
+        }
+      }
+
+      // Restore button state & show toast
+      setTimeout(() => {
+        if (submitBtn) submitBtn.disabled = false;
+        if (submitText) submitText.textContent = 'GỬI YÊU CẦU ĐẶT HÀNG NGAY';
+
+        showToast(
+          'Tiếp nhận yêu cầu thành công!',
+          `Cảm ơn quý khách ${name}. Thông tin đơn hàng đã được gửi đến chuyên viên tư vấn BIRD'S NEST. Chúng tôi sẽ liên hệ qua SĐT ${phone} để xác nhận đơn ngay.`
+        );
+
+        orderForm.reset();
+      }, 600);
     });
   }
 

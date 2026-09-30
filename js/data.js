@@ -52,6 +52,16 @@ window.BRAND_DATA = {
     mapsEmbed: ""
   },
 
+  orderConfig: {
+    // 1. Gửi thông báo đơn hàng tự động về Email qua Netlify Forms
+    enableNetlifyEmail: true,
+    notificationEmail: "nlx.technical.sales@gmail.com",
+
+    // 2. Tự động lưu đơn hàng vào Google Sheets (Bảng tính Google)
+    // Dán URL Web App của Google Apps Script vào đây để kích hoạt
+    googleSheetWebhookUrl: ""
+  },
+
   products: [
     {
       id: "yen-chung",
