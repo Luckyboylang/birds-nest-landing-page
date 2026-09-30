@@ -1411,15 +1411,17 @@ img, svg {
 }
 
 .timeline-placeholder {
-  font-size: 13px;
-  font-weight: 600;
-  color: var(--c-gold-700);
-  background: var(--c-gold-100);
-  padding: 6px 12px;
-  border-radius: var(--radius-sm);
+  font-size: 12.5px;
+  font-weight: 700;
+  color: var(--c-burgundy-900);
+  background: linear-gradient(135deg, rgba(212, 175, 55, 0.16) 0%, rgba(245, 222, 152, 0.28) 100%);
+  padding: 6px 14px;
+  border-radius: var(--radius-full);
   display: inline-block;
   margin-bottom: 12px;
-  border: 1px dashed rgba(212, 175, 55, 0.5);
+  border: 1px solid rgba(212, 175, 55, 0.45);
+  box-shadow: 0 2px 8px rgba(212, 175, 55, 0.1);
+  letter-spacing: 0.2px;
 }
 
 .timeline-desc {
@@ -1481,14 +1483,15 @@ img, svg {
 
 .usage-placeholder {
   font-size: 12px;
-  font-weight: 600;
-  color: var(--c-gold-700);
-  background: var(--c-gold-100);
-  padding: 4px 8px;
-  border-radius: var(--radius-sm);
+  font-weight: 700;
+  color: var(--c-burgundy-900);
+  background: linear-gradient(135deg, rgba(212, 175, 55, 0.14) 0%, rgba(245, 222, 152, 0.24) 100%);
+  padding: 5px 12px;
+  border-radius: var(--radius-full);
   display: inline-block;
   margin-bottom: 12px;
-  border: 1px dashed rgba(212, 175, 55, 0.4);
+  border: 1px solid rgba(212, 175, 55, 0.4);
+  letter-spacing: 0.2px;
 }
 
 .usage-preview {

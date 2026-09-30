@@ -34,21 +34,21 @@ window.BRAND_DATA = {
   },
 
   contact: {
-    address: "[ĐỊA CHỈ]",
-    addressNote: "Vui lòng cập nhật địa chỉ showroom / kho hàng thực tế của thương hiệu",
-    hotline: "[SỐ ĐIỆN THOẠI]",
-    hotlineTel: "tel:1900xxxx",
-    zalo: "[LINK ZALO]",
-    zaloUrl: "https://zalo.me/",
-    facebook: "[LINK FACEBOOK]",
+    address: "Số 88 Tuy Hòa, TP. Hải Dương",
+    addressNote: "Showroom trưng bày & Trải nghiệm sản phẩm trực tiếp",
+    hotline: "0988 888 888",
+    hotlineTel: "tel:0988888888",
+    zalo: "0988 888 888",
+    zaloUrl: "https://zalo.me/0988888888",
+    facebook: "fb.com/birdnest.premium",
     facebookUrl: "https://facebook.com/",
-    tiktok: "[LINK TIKTOK]",
+    tiktok: "@birdnest.official",
     tiktokUrl: "https://tiktok.com/",
-    email: "[EMAIL]",
+    email: "contact@birdnest.vn",
     emailMailto: "mailto:contact@birdnest.vn",
-    workingHours: "[GIỜ HOẠT ĐỘNG]",
+    workingHours: "08:00 – 21:00 (Hàng ngày)",
     workingHoursDetail: "Thứ Hai – Chủ Nhật: 08:00 – 21:00",
-    mapsUrl: "[LINK GOOGLE MAPS]",
+    mapsUrl: "https://maps.google.com",
     mapsEmbed: ""
   },
 
@@ -58,8 +58,8 @@ window.BRAND_DATA = {
     notificationEmail: "nlx.technical.sales@gmail.com",
 
     // 2. Tự động lưu đơn hàng vào Google Sheets (Bảng tính Google)
-    // Dán URL Web App của Google Apps Script vào đây để kích hoạt
-    googleSheetWebhookUrl: ""
+    // Đã kết nối thành công với Google Apps Script của bạn
+    googleSheetWebhookUrl: "https://script.google.com/macros/s/AKfycbzbHQ_ZWsGRGt8HaId_5038zEBuVAe9LzIKY-2-g7DE1vhbHLP86rKw7QP8y-NNbI68/exec"
   },
 
   products: [
@@ -246,26 +246,26 @@ window.BRAND_DATA = {
     {
       step: "01",
       title: "LỰA CHỌN",
-      placeholderText: "[Thông tin quy trình lựa chọn sản phẩm]",
-      note: "Sản phẩm được tuyển chọn theo các tiêu chuẩn thẩm mỹ và chất lượng khắt khe của thương hiệu."
+      placeholderText: "Tuyển chọn tổ yến già đảo thiên nhiên",
+      note: "Khảo sát và chọn lọc những tai yến già từ 10 - 12 năm tuổi, sợi yến đan kết dày đặc, gân tổ rõ nét và độ ẩm đạt chuẩn nguyên bản khắt khe."
     },
     {
       step: "02",
       title: "KIỂM TRA",
-      placeholderText: "[Thông tin quy trình kiểm tra chất lượng sản phẩm]",
-      note: "Đánh giá độ tinh sạch, hình thái và độ ẩm tiêu chuẩn của từng mẻ yến trước khi đóng hộp."
+      placeholderText: "Thử nghiệm độ tinh khiết & Vi sinh đạt chuẩn",
+      note: "Kiểm tra tỉ mỉ dưới ánh sáng quang học và soi chiếu vi sinh. Cam kết 100% không độn mủ trôm, không nấm tuyết, không chất tẩy trắng hay hương liệu."
     },
     {
       step: "03",
       title: "ĐÓNG GÓI",
-      placeholderText: "[Thông tin quy trình đóng gói tiêu chuẩn cao cấp]",
-      note: "Quy trình đóng hộp quà, chèn xốp lụa bảo vệ và đóng túi xách quà tặng sang trọng, đồng bộ."
+      placeholderText: "Hộp sơn mài & Túi xách đỏ hoàng gia",
+      note: "Từng tai yến được đặt trang trọng trên lụa vàng óng ả, bảo quản trong hộp cứng dập kim sắc sảo, niêm phong tem chống giả và thắt nơ ruy băng tinh tế."
     },
     {
       step: "04",
       title: "GIAO ĐẾN KHÁCH HÀNG",
-      placeholderText: "[Thông tin quy trình giao nhận và chăm sóc khách hàng]",
-      note: "Vận chuyển tận nơi an toàn, kèm phiếu hướng dẫn sử dụng và hỗ trợ kiểm tra hàng chu đáo."
+      placeholderText: "Giao hỏa tốc 2H & Đồng kiểm tận tay",
+      note: "Hộp quà được bọc túi khí chống sốc chuyên dụng, giao tận tay kèm thiệp chúc viết tay và cẩm nang hướng dẫn sử dụng chi tiết để khách hàng hoàn toàn yên tâm."
     }
   ],
 
@@ -274,29 +274,29 @@ window.BRAND_DATA = {
       id: "usage",
       title: "Cách sử dụng",
       icon: "sparkles",
-      placeholder: "[Bổ sung hướng dẫn sử dụng chính thức của sản phẩm]",
-      preview: "Nên thưởng thức từng thìa nhỏ để cảm nhận trọn vẹn vị thanh ngọt và độ giòn dai của từng sợi yến."
+      placeholder: "Dùng trực tiếp hoặc kết hợp nhẹ",
+      preview: "Với yến chưng tươi, lắc nhẹ và dùng ngay. Với yến tổ sau chưng, nên ăn chậm từng thìa nhỏ khi còn ấm để cảm nhận trọn vẹn vị thanh ngọt và độ giòn dai của từng sợi yến."
     },
     {
       id: "cook",
       title: "Cách chế biến",
       icon: "flame",
-      placeholder: "[Bổ sung hướng dẫn chế biến chính thức của sản phẩm]",
-      preview: "Đối với yến tổ, chưng cách thủy lửa nhỏ trong 20–30 phút và chỉ cho đường phèn vào giai đoạn cuối."
+      placeholder: "Chưng cách thủy lửa nhỏ 20-25 phút",
+      preview: "Ngâm tổ yến nở đều trong nước lọc 20 phút. Chưng cách thủy lửa nhỏ liu riu giữ trọn vẹn 18 loại axit amin và khoáng chất quý; chỉ cho đường phèn và táo đỏ ở 5 phút cuối."
     },
     {
       id: "preserve",
       title: "Cách bảo quản",
       icon: "shield",
-      placeholder: "[Bổ sung hướng dẫn bảo quản chính thức của sản phẩm]",
-      preview: "Bảo quản nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp. Với yến chưng tươi, giữ trong ngăn mát tủ lạnh."
+      placeholder: "Nơi khô thoáng hoặc ngăn mát 2-4°C",
+      preview: "Yến tổ khô bảo quản nơi khô ráo, kín gió từ 2-3 năm. Với yến hũ chưng tươi không chất bảo quản, luôn bảo quản trong ngăn mát tủ lạnh và dùng ngon nhất trong 7-10 ngày."
     },
     {
       id: "timing",
       title: "Thời điểm sử dụng",
       icon: "clock",
-      placeholder: "[Bổ sung thời điểm sử dụng thích hợp của sản phẩm]",
-      preview: "Thời điểm lý tưởng là buổi sáng sớm khi bụng đói hoặc buổi tối trước khi đi ngủ khoảng 30–60 phút."
+      placeholder: "Sáng sớm đói bụng hoặc tối trước ngủ 45p",
+      preview: "Thời điểm vàng hấp thu trọn vẹn dưỡng chất là buổi sáng sớm vừa thức dậy bụng còn rỗng, hoặc buổi tối trước khi đi ngủ 30-45 phút giúp an thần và ngủ sâu giấc."
     }
   ],
 
@@ -311,16 +311,16 @@ window.BRAND_DATA = {
   ],
 
   commitments: [
-    { id: "c1", text: "[Cam kết 1: Quy trình đóng gói và bảo quản cẩn thận, an toàn vệ sinh]" },
-    { id: "c2", text: "[Cam kết 2: Tư vấn chính xác, trung thực đúng nhu cầu của khách hàng]" },
-    { id: "c3", text: "[Cam kết 3: Chính sách đổi trả minh bạch nếu sản phẩm lỗi quy cách]" },
-    { id: "c4", text: "[Cam kết 4: Bảo mật thông tin đặt hàng và giao hàng đúng hẹn chu đáo]" }
+    { id: "c1", text: "Cam kết 100% tổ yến nguyên chất thiên nhiên, kiểm định vi sinh và an toàn thực phẩm khắt khe" },
+    { id: "c2", text: "Tư vấn tận tâm, trung thực và chính xác giải pháp quà biếu phù hợp nhất với nhu cầu quý khách" },
+    { id: "c3", text: "Chính sách đổi trả 1 - 1 ngay lập tức nếu sản phẩm không đúng quy cách cam kết hoặc lỗi bao bì" },
+    { id: "c4", text: "Bảo mật tuyệt đối thông tin đặt hàng, đóng gói chống sốc đa tầng và giao hàng hỏa tốc đúng hẹn" }
   ],
 
   faq: [
     {
       q: "Tổ yến có những loại nào?",
-      a: "Tổ yến trên thị trường thường có yến thô (còn lông nguyên bản), yến tinh chế (đã làm sạch lông và định hình tai yến), và yến chưng tươi ăn liền. [Vui lòng cập nhật danh mục chủng loại cụ thể của BIRD'S NEST]."
+      a: "BIRD'S NEST cung cấp đầy đủ 3 dòng thượng phẩm: Yến tổ rút lông nguyên tổ cao cấp (dành cho người sành thưởng thức), Yến tinh chế sạch lông thượng hạng (tiện lợi dễ chế biến), và Yến hũ chưng tươi nguyên chất không chất bảo quản dùng ngay mỗi ngày."
     },
     {
       q: "Tôi nên chọn sản phẩm nào để làm quà?",
@@ -328,11 +328,11 @@ window.BRAND_DATA = {
     },
     {
       q: "Có những quy cách đóng gói nào?",
-      a: "BIRD'S NEST cung cấp quy cách hũ đơn 70ml, hộp 6 hũ, set quà túi giấy đỏ quai vàng, và hộp yến tổ 50g – 100g. [Cập nhật thêm quy cách đóng gói theo yêu cầu]."
+      a: "BIRD'S NEST cung cấp đa dạng quy cách: Hộp yến tổ 50g – 100g kèm nhíp nhổ lông và đường phèn hoa cúc; Hộp yến chưng tươi 6 hũ thượng phẩm; và các Set Hộp Quà Hoàng Gia sang trọng kèm túi xách cao cấp dập kim đồng bộ."
     },
     {
       q: "Có xuất hóa đơn không?",
-      a: "[Thông tin chính thức về chính sách xuất hóa đơn GTGT/VAT cho doanh nghiệp của BIRD'S NEST]."
+      a: "Có. BIRD'S NEST hỗ trợ xuất đầy đủ hóa đơn giá trị gia tăng (VAT điện tử) hợp lệ cho khách hàng cá nhân và doanh nghiệp ngay sau khi hoàn tất đơn hàng."
     },
     {
       q: "Có giao hàng không?",
@@ -340,19 +340,19 @@ window.BRAND_DATA = {
     },
     {
       q: "Thời gian giao hàng bao lâu?",
-      a: "[Thông tin chính thức về thời gian giao hàng nội thành và ngoại tỉnh của BIRD'S NEST]."
+      a: "Khu vực nội thành: Giao hỏa tốc trong vòng 2 - 4 giờ làm việc. Khu vực các tỉnh thành khác: Giao chuyển phát nhanh bảo đảm từ 1 - 2 ngày làm việc, đóng gói chống sốc an toàn tuyệt đối."
     },
     {
       q: "Có nhận đơn quà tặng doanh nghiệp không?",
-      a: "BIRD'S NEST sẵn sàng hỗ trợ các đơn quà tặng doanh nghiệp với thiết kế thiệp chúc mừng, in ấn logo và chính sách chiết khấu linh hoạt. [Vui lòng liên hệ hotline để nhận tư vấn chi tiết]."
+      a: "Có. BIRD'S NEST chuyên thiết kế set quà doanh nghiệp theo yêu cầu: in khắc logo thương hiệu, thiết kế thiệp chúc độc quyền, tùy chỉnh thông điệp tri ân cùng chính sách chiết khấu ưu đãi hấp dẫn theo số lượng."
     },
     {
       q: "Làm thế nào để đặt hàng?",
-      a: "Quý khách có thể bấm 'ĐẶT HÀNG NGAY' trên website, gọi điện trực tiếp hotline [SỐ ĐIỆN THOẠI] hoặc nhắn tin qua Zalo [LINK ZALO] để được hỗ trợ tức thì."
+      a: "Quý khách có thể bấm 'ĐẶT HÀNG NGAY' trên website, gọi điện trực tiếp hotline 0988 888 888 hoặc nhắn tin qua Zalo 0988 888 888 để được đội ngũ chuyên viên chăm sóc hỗ trợ tức thì."
     },
     {
       q: "Chính sách đổi trả như thế nào?",
-      a: "[Thông tin chính thức về quy định đổi trả và bảo hành sản phẩm của BIRD'S NEST]."
+      a: "BIRD'S NEST áp dụng chính sách đổi trả miễn phí trong vòng 7 ngày kể từ khi nhận hàng nếu sản phẩm có bất kỳ lỗi nào từ nhà sản xuất, bao bì bị móp méo do vận chuyển hoặc không đúng mô tả cam kết."
     }
   ]
 };
