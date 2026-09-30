@@ -34,12 +34,12 @@ window.BRAND_DATA = {
   },
 
   contact: {
-    address: "Số 88 Tuy Hòa, TP. Hải Dương",
+    address: " TP. HCM",
     addressNote: "Showroom trưng bày & Trải nghiệm sản phẩm trực tiếp",
-    hotline: "0988 888 888",
-    hotlineTel: "tel:0988888888",
-    zalo: "0988 888 888",
-    zaloUrl: "https://zalo.me/0988888888",
+    hotline: "0988 xxx 888",
+    hotlineTel: "tel:0988xxx888",
+    zalo: "0988 xxx 888",
+    zaloUrl: "https://zalo.me/0988xxx888",
     facebook: "fb.com/birdnest.premium",
     facebookUrl: "https://facebook.com/",
     tiktok: "@birdnest.official",
@@ -348,7 +348,7 @@ window.BRAND_DATA = {
     },
     {
       q: "Làm thế nào để đặt hàng?",
-      a: "Quý khách có thể bấm 'ĐẶT HÀNG NGAY' trên website, gọi điện trực tiếp hotline 0988 888 888 hoặc nhắn tin qua Zalo 0988 888 888 để được đội ngũ chuyên viên chăm sóc hỗ trợ tức thì."
+      a: "Quý khách có thể bấm 'ĐẶT HÀNG NGAY' trên website, gọi điện trực tiếp hotline 0988 xxx 888 hoặc nhắn tin qua Zalo 0988 xxx 888 để được đội ngũ chuyên viên chăm sóc hỗ trợ tức thì."
     },
     {
       q: "Chính sách đổi trả như thế nào?",
