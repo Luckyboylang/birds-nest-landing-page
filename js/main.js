@@ -489,11 +489,27 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       });
     }, {
-      rootMargin: '0px 0px -60px 0px',
-      threshold: 0.12
+      rootMargin: '0px 0px 80px 0px',
+      threshold: 0.02
     });
 
     document.querySelectorAll('.scroll-reveal').forEach(el => observer.observe(el));
+
+    // Robust Mobile Fallback: Reveal elements as user scrolls or on layout changes
+    const checkVisibility = () => {
+      const viewH = window.innerHeight || document.documentElement.clientHeight;
+      document.querySelectorAll('.scroll-reveal:not(.revealed)').forEach(el => {
+        const r = el.getBoundingClientRect();
+        if (r.top < viewH + 120 && r.bottom > -50) {
+          el.classList.add('revealed');
+        }
+      });
+    };
+
+    window.addEventListener('scroll', checkVisibility, { passive: true });
+    window.addEventListener('resize', checkVisibility, { passive: true });
+    setTimeout(checkVisibility, 400);
+    setTimeout(checkVisibility, 1200);
   }
 
   // =========================================================================
